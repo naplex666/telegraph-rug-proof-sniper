@@ -1,0 +1,22 @@
+INFO:Detectors:
+Detector: missing-zero-check
+HoneyKillSwitch.constructor(address)._pair (contracts/HoneyKillSwitch.sol#14) lacks a zero-check on :
+		- pair = _pair (contracts/HoneyKillSwitch.sol#16)
+HoneySellBlocked.constructor(address)._pair (contracts/HoneySellBlocked.sol#13) lacks a zero-check on :
+		- pair = _pair (contracts/HoneySellBlocked.sol#15)
+HoneyTax99.constructor(address)._pair (contracts/HoneyTax99.sol#13) lacks a zero-check on :
+		- pair = _pair (contracts/HoneyTax99.sol#15)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+INFO:Detectors:
+Detector: immutable-states
+ERC20Base.totalSupply (contracts/Base.sol#11) should be immutable 
+HoneyBlacklist.owner (contracts/HoneyBlacklist.sol#10) should be immutable 
+HoneyHiddenMint.owner (contracts/HoneyHiddenMint.sol#9) should be immutable 
+HoneyKillSwitch.owner (contracts/HoneyKillSwitch.sol#10) should be immutable 
+HoneyKillSwitch.pair (contracts/HoneyKillSwitch.sol#11) should be immutable 
+HoneySellBlocked.owner (contracts/HoneySellBlocked.sol#10) should be immutable 
+HoneySellBlocked.pair (contracts/HoneySellBlocked.sol#11) should be immutable 
+HoneyTax99.owner (contracts/HoneyTax99.sol#10) should be immutable 
+HoneyTax99.pair (contracts/HoneyTax99.sol#11) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+INFO:Slither:contracts/ analyzed (8 contracts with 102 detectors), 12 result(s) found

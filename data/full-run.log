@@ -1,0 +1,41 @@
+[telegraph-mcp] v2.1.1 on https://devnode.telegraphprotocol.com; wallet 0x35C306388dEb30dE096dDc76e4EF7C40B09458f3; payment escrow
+run 20261118T061448: 7 token(s), escrow unbilled before: $0.12
+metric deployer tx_count: {"balance_gwei":0,"address":"0x35C306388dEb30dE096dDc76e4EF7C40B09458f3","block":"26440080","chain":"eth","tx_count":null} cost_ledger=$0.02 receipt=0xbfbf0c74428eaf2ba35eabfd15db7f4439c53dc9629b5ef89787ff8091900dba
+
+== HoneySellBlocked 0x38659121Bb8498c26C0776602425173655b0c9ff ==
+audit: SUSPICIOUS miner=openai (id openai) cost_ledger=$0 receipt=null 
+wash: inconclusive miner=PREFLIGHT Infrastructure Signals (id 20260828) cost_ledger=$0.01 receipt=0x24c3beabd29667c943049c454e397067eedf28ad80db0dd9fee3a9c8d37d3289 
+DECISION: ABORT — audit verdict SUSPICIOUS
+
+== HoneyTax99 0x68EcF362cE958908F38Bb7CD52A3ECEb7c23E6Cf ==
+audit: MALICIOUS miner=openai (id openai) cost_ledger=$0 receipt=null 
+wash: inconclusive miner=PREFLIGHT Infrastructure Signals (id 20260828) cost_ledger=$0.01 receipt=0x08bf19dffe36b5964a664dd6adab3759507baf0cb5816179ea2aff7a2e22d509 
+DECISION: ABORT — audit verdict MALICIOUS
+
+== HoneyBlacklist 0xCBbE669AbDF9b221cD95dc717226314bfC39D763 ==
+audit: MALICIOUS miner=openai (id openai) cost_ledger=$0 receipt=null 
+wash: inconclusive miner=PREFLIGHT Infrastructure Signals (id 20260828) cost_ledger=$0.01 receipt=0x66689af3266f155c9b6ed915975966c88b8543ac057de3b0ebcfa03ee014dda8 
+DECISION: ABORT — audit verdict MALICIOUS
+
+== HoneyHiddenMint 0xc0a79E537428345e37EBb6695126A0dFFC7626d5 ==
+audit: MALICIOUS miner=openai (id openai) cost_ledger=$0 receipt=null 
+wash: inconclusive miner=PREFLIGHT Infrastructure Signals (id 20260828) cost_ledger=$0.01 receipt=0xe90647f01d9975b6e1ba4d984d62e8e8dce70cd7eb8c451347a6bd1dd8186eff 
+DECISION: ABORT — audit verdict MALICIOUS
+
+== HoneyKillSwitch 0xe2f00533b47EB0480916b2060391A85B9A6905Ed ==
+audit: SUSPICIOUS miner=openai (id openai) cost_ledger=$0 receipt=null 
+wash: inconclusive miner=PREFLIGHT Infrastructure Signals (id 20260828) cost_ledger=$0.01 receipt=0xaf2cf4b3d5e83cb96a1ba288723514c10c9960bef9e5dfca53be81c87907bfce 
+DECISION: ABORT — audit verdict SUSPICIOUS
+
+== CleanA 0xA16b3D95c1E4Fcf26ae2A57f46182F8570782c53 ==
+audit: SAFE miner=openai (id openai) cost_ledger=$0 receipt=null 
+wash: inconclusive miner=PREFLIGHT Infrastructure Signals (id 20260828) cost_ledger=$0.01 receipt=0xeee3427720c9cdbc063e9497c7994b4c2467d80df8841de201429f3a1e8fa6b6 
+DECISION: EXECUTE — audit SAFE, no wash signal
+
+== CleanB 0xC3e8BcDac236a2C302aCD16508F0ef6490315315 ==
+audit: SAFE miner=openai (id openai) cost_ledger=$0 receipt=null 
+wash: inconclusive miner=PREFLIGHT Infrastructure Signals (id 20260828) cost_ledger=$0.01 receipt=0xaa712fb487d3c334ff474138b96ebefb79c63c160830ec7d31675c09f0e40753 
+DECISION: EXECUTE — audit SAFE, no wash signal
+
+run 20261118T061448 done: 5 ABORT, 2 EXECUTE. escrow unbilled now: $0.21
+ledger: /home/hatch/workspace/telegraph/sniper/data/ledger.jsonl

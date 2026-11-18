@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Rug-Proof Sniper — Telegraph Mission 14</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1000px;margin:2rem auto;padding:0 1rem;color:#111}
+h1{font-size:1.6rem} table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{border:1px solid #ccc;padding:.4rem .5rem;text-align:left;vertical-align:top}
+th{background:#f0f0f0} code{font-size:.85rem}
+.card{border:1px solid #ccc;border-left:6px solid #888;border-radius:6px;padding:.6rem 1rem;margin:.6rem 0}
+.card.abort{border-left-color:#c0392b}.card.exec{border-left-color:#27ae60}
+.badge{background:#eee;border-radius:4px;padding:.1rem .4rem;font-size:.8rem}
+.err{color:#c0392b}.note{background:#f7f7f7;border-radius:6px;padding:.8rem 1rem;font-size:.9rem}
+</style></head><body>
+<h1>🛡 Rug-Proof Memecoin Sniper</h1>
+<p>Telegraph Hackathon Season II — Mission 14 (Web3 Native &amp; DeFi), Apps &amp; Agents track.
+Testnet only (Ethereum Sepolia). Every buy decision is gated on intelligence bought
+through Telegraph <i>before</i> capital is committed.</p>
+<h2>Summary</h2>
+<p>Tokens scanned: <b>7</b> &nbsp; Aborted (honeypot / no evidence): <b>5</b> &nbsp;
+Executed (paper buys): <b>2</b> &nbsp; Total Telegraph spend (node ledger): <b>$0.0900</b></p>
+<p>Wallet: <code>0x35C306388dEb30dE096dDc76e4EF7C40B09458f3</code> (Sepolia) ·
+Escrow: Telegraph diamond <code>0x72a70e…08b</code> · Corpus: <code>data/corpus.json</code></p>
+<h2>Spend panel — every Telegraph request</h2>
+<table><tr><th>Token</th><th>Intent</th><th>Miner</th><th>Status</th><th>Verdict</th><th>Cost (ledger)</th><th>Receipt</th><th>Note / error</th></tr>
+<tr>
+  <td>— (deployer)</td><td><code>ONCHAIN_METRIC_VERIFY_GENERAL</code></td>
+  <td>TxLens (id 9002)</td><td>200</td>
+  <td>—</td><td>$0.0200</td><td><code>0xbfbf0c74…900dba</code></td>
+  <td></td></tr>
+<tr>
+  <td>HoneySellBlocked</td><td><code>SMART_CONTRACT_AUDIT_GENERAL</code></td>
+  <td>openai (id openai)</td><td>200</td>
+  <td>SUSPICIOUS</td><td>$0.0000</td><td>—</td>
+  <td></td></tr>
+<tr>
+  <td>HoneySellBlocked</td><td><code>WASH_TRADING_DETECTION_GENERAL</code></td>
+  <td>PREFLIGHT Infrastructure Signals (id 20260828)</td><td>200</td>
+  <td>inconclusive</td><td>$0.0100</td><td><code>0x24c3beab…7d3289</code></td>
+  <td></td></tr>
+<tr>
+  <td>HoneyTax99</td><td><code>SMART_CONTRACT_AUDIT_GENERAL</code></td>
+  <td>openai (id openai)</td><td>200</td>
+  <td>MALICIOUS</td><td>$0.0000</td><td>—</td>
+  <td></td></tr>
+<tr>
+  <td>HoneyTax99</td><td><code>WASH_TRADING_DETECTION_GENERAL</code></td>
+  <td>PREFLIGHT Infrastructure Signals (id 20260828)</td><td>200</td>
+  <td>inconclusive</td><td>$0.0100</td><td><code>0x08bf19df…22d509</code></td>
+  <td></td></tr>
+<tr>
+  <td>HoneyBlacklist</td><td><code>SMART_CONTRACT_AUDIT_GENERAL</code></td>
+  <td>openai (id openai)</td><td>200</td>
+  <td>MALICIOUS</td><td>$0.0000</td><td>—</td>
+  <td></td></tr>
+<tr>
+  <td>HoneyBlacklist</td><td><code>WASH_TRADING_DETECTION_GENERAL</code></td>
+  <td>PREFLIGHT Infrastructure Signals (id 20260828)</td><td>200</td>
+  <td>inconclusive</td><td>$0.0100</td><td><code>0x66689af3…14dda8</code></td>
+  <td></td></tr>
+<tr>
+  <td>HoneyHiddenMint</td><td><code>SMART_CONTRACT_AUDIT_GENERAL</code></td>
+  <td>openai (id openai)</td><td>200</td>
+  <td>MALICIOUS</td><td>$0.0000</td><td>—</td>
+  <td></td></tr>
+<tr>
+  <td>HoneyHiddenMint</td><td><code>WASH_TRADING_DETECTION_GENERAL</code></td>
+  <td>PREFLIGHT Infrastructure Signals (id 20260828)</td><td>200</td>
+  <td>inconclusive</td><td>$0.0100</td><td><code>0xe90647f0…186eff</code></td>
+  <td></td></tr>
+<tr>
+  <td>HoneyKillSwitch</td><td><code>SMART_CONTRACT_AUDIT_GENERAL</code></td>
+  <td>openai (id openai)</td><td>200</td>
+  <td>SUSPICIOUS</td><td>$0.0000</td><td>—</td>
+  <td></td></tr>
+<tr>
+  <td>HoneyKillSwitch</td><td><code>WASH_TRADING_DETECTION_GENERAL</code></td>
+  <td>PREFLIGHT Infrastructure Signals (id 20260828)</td><td>200</td>
+  <td>inconclusive</td><td>$0.0100</td><td><code>0xaf2cf4b3…07bfce</code></td>
+  <td></td></tr>
+<tr>
+  <td>CleanA</td><td><code>SMART_CONTRACT_AUDIT_GENERAL</code></td>
+  <td>openai (id openai)</td><td>200</td>
+  <td>SAFE</td><td>$0.0000</td><td>—</td>
+  <td></td></tr>
+<tr>
+  <td>CleanA</td><td><code>WASH_TRADING_DETECTION_GENERAL</code></td>
+  <td>PREFLIGHT Infrastructure Signals (id 20260828)</td><td>200</td>
+  <td>inconclusive</td><td>$0.0100</td><td><code>0xeee34277…8fa6b6</code></td>
+  <td></td></tr>
+<tr>
+  <td>CleanB</td><td><code>SMART_CONTRACT_AUDIT_GENERAL</code></td>
+  <td>openai (id openai)</td><td>200</td>
+  <td>SAFE</td><td>$0.0000</td><td>—</td>
+  <td></td></tr>
+<tr>
+  <td>CleanB</td><td><code>WASH_TRADING_DETECTION_GENERAL</code></td>
+  <td>PREFLIGHT Infrastructure Signals (id 20260828)</td><td>200</td>
+  <td>inconclusive</td><td>$0.0100</td><td><code>0xaa712fb4…e40753</code></td>
+  <td></td></tr>
+</table>
+<h2>Decisions</h2>
+<div class="card abort">
+    <h3>HoneySellBlocked <span class="badge">ABORT</span></h3>
+    <p><code>0x38659121Bb8498c26C0776602425173655b0c9ff</code></p>
+    <p>Audit: <b>SUSPICIOUS</b> &nbsp; Wash: <b>inconclusive</b></p>
+    <p>Reason: audit verdict SUSPICIOUS<br>Note: fresh deployer: no mainnet history</p>
+  </div>
+<div class="card abort">
+    <h3>HoneyTax99 <span class="badge">ABORT</span></h3>
+    <p><code>0x68EcF362cE958908F38Bb7CD52A3ECEb7c23E6Cf</code></p>
+    <p>Audit: <b>MALICIOUS</b> &nbsp; Wash: <b>inconclusive</b></p>
+    <p>Reason: audit verdict MALICIOUS<br>Note: fresh deployer: no mainnet history</p>
+  </div>
+<div class="card abort">
+    <h3>HoneyBlacklist <span class="badge">ABORT</span></h3>
+    <p><code>0xCBbE669AbDF9b221cD95dc717226314bfC39D763</code></p>
+    <p>Audit: <b>MALICIOUS</b> &nbsp; Wash: <b>inconclusive</b></p>
+    <p>Reason: audit verdict MALICIOUS<br>Note: fresh deployer: no mainnet history</p>
+  </div>
+<div class="card abort">
+    <h3>HoneyHiddenMint <span class="badge">ABORT</span></h3>
+    <p><code>0xc0a79E537428345e37EBb6695126A0dFFC7626d5</code></p>
+    <p>Audit: <b>MALICIOUS</b> &nbsp; Wash: <b>inconclusive</b></p>
+    <p>Reason: audit verdict MALICIOUS<br>Note: fresh deployer: no mainnet history</p>
+  </div>
+<div class="card abort">
+    <h3>HoneyKillSwitch <span class="badge">ABORT</span></h3>
+    <p><code>0xe2f00533b47EB0480916b2060391A85B9A6905Ed</code></p>
+    <p>Audit: <b>SUSPICIOUS</b> &nbsp; Wash: <b>inconclusive</b></p>
+    <p>Reason: audit verdict SUSPICIOUS<br>Note: fresh deployer: no mainnet history</p>
+  </div>
+<div class="card exec">
+    <h3>CleanA <span class="badge">EXECUTE</span></h3>
+    <p><code>0xA16b3D95c1E4Fcf26ae2A57f46182F8570782c53</code></p>
+    <p>Audit: <b>SAFE</b> &nbsp; Wash: <b>inconclusive</b></p>
+    <p>Reason: audit SAFE, no wash signal<br>Note: fresh deployer: no mainnet history</p>
+  </div>
+<div class="card exec">
+    <h3>CleanB <span class="badge">EXECUTE</span></h3>
+    <p><code>0xC3e8BcDac236a2C302aCD16508F0ef6490315315</code></p>
+    <p>Audit: <b>SAFE</b> &nbsp; Wash: <b>inconclusive</b></p>
+    <p>Reason: audit SAFE, no wash signal<br>Note: fresh deployer: no mainnet history</p>
+  </div>
+<h2>Paper trades</h2>
+<ul><li>HoneySellBlocked: no buy — no buy — aborted</li>
+<li>HoneyTax99: no buy — no buy — aborted</li>
+<li>HoneyBlacklist: no buy — no buy — aborted</li>
+<li>HoneyHiddenMint: no buy — no buy — aborted</li>
+<li>HoneyKillSwitch: no buy — no buy — aborted</li>
+<li>CleanA: SIMULATED BUY 0.001 Sepolia ETH notional — SIMULATED buy only — no pool exists for this demo token, no on-chain swap, no funds moved</li>
+<li>CleanB: SIMULATED BUY 0.001 Sepolia ETH notional — SIMULATED buy only — no pool exists for this demo token, no on-chain swap, no funds moved</li></ul>
+<div class="note"><b>How to read this:</b> (1) Audit asks include the token's full Solidity source in the
+question — the audit miner cannot fetch live chain state. (2) Audit answers currently come from the
+node's last-resort general model (free on the ledger); verdicts are still the model's reading of the
+provided source. (3) Wash miners only cover mainnet/Base, so Sepolia corpus tokens return
+"Unsupported chain" (free, unbilled) — the wash leg is proven separately on PEPE/mainnet
+(receipt <code>0x882f2630…713e97</code>, $0.01). (4) Cost shown is the node's ledger unbilled delta per
+ask, not the $0.26 authorization hold echoed in ask responses. (5) "EXECUTE" is a paper trade only:
+no pool exists for these demo tokens, no on-chain swap happens, no funds move.</div>
+<p><small>Generated from <code>data/ledger.jsonl</code>. Corpus: HoneySellBlocked <code>0x38659121…</code> · HoneyTax99 <code>0x68EcF362…</code> · HoneyBlacklist <code>0xCBbE669A…</code> · HoneyHiddenMint <code>0xc0a79E53…</code> · HoneyKillSwitch <code>0xe2f00533…</code> · CleanA <code>0xA16b3D95…</code> · CleanB <code>0xC3e8BcDa…</code></small></p>
+</body></html>
